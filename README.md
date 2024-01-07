@@ -1,2 +1,2 @@
 # estacio-fs
- Repositório dos meus exercícios da faculdade
+ Repositório dos meus exercícios da faculdade.
