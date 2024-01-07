@@ -1,3 +1,4 @@
+
 body {
     background-color: #E9967A;
     display: flex;
@@ -23,6 +24,7 @@ nav > p {
 
 main {
     font-weight: bold; 
+    overflow-y: auto;
 }
 
 
