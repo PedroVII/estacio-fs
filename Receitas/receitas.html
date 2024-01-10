@@ -3,107 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de receitas</title>
+    <title>Document</title>
+    <style type="text/css">
+      body { background-color: #E9967A !important; }
+   </style>
+    <link rel="stylesheet" href="cr.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="receitas.
-    css">
 </head>
 <body>
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-                <div class="container-fluid">
-                  <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                  >
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="home.html">Home</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="receitas.html">Receitas</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="cadastro.html">Cadastro</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </nav>
-          </header>
-
-    <main>
-        <div id="container">
-            <div id="receita1">
-                <h1>Arroz de Couve-flor
-                </h1>
-            
-                    <div>
-                        <img src="imagens/arroz.jpg" alt="Imagem de um arroz de couve-flor" id="couve">
-                    </div>
-            
-                <ul>
-                    <li>Arroz</li>
-                    <li>Couve-Flor</li>
-                    <li>Cebola Média</li>
-                    <li>Azeite</li>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="home.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="receitas.html">Receitas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="cadastro.html">Cadastro</a>
+                  </li>
                 </ul>
-                <hr>
-            
-                <p>Deixe a couve-flor picada. Adicione os ingredientes e refogue bem. Adicione sal, tampe a panela e deixe cozinhar.</p>
+              </div>
             </div>
+          </nav>
+      </header>
 
-            <div id="receita2">
-                <h1>Bolo de Café</h1>
+<main>
+  <div class="row row-cols-1 row-cols-md-3 g-5 my-5 py-5 mx-auto">
+    <div class="col">
+      <div class="card h-100 mx-auto">
+        <img src="imagens/arroz.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title card text-center">Arroz de Couve-flor</h5>
 
-                <div>
-                    <img src="imagens/bolo.jpg" alt="Imagem de um bolo de café" id="bolo">
-                </div>
+          <ul>
+            <li>Arroz</li>
+            <li>Couve-Flor</li>
+            <li>Cebola Média</li>
+            <li>Azeite</li>
+        </ul>
+        <hr>
 
-                <ul>
-                    <li>Farinha de Trigo</li>
-                    <li>Acúcar</li>
-                    <li>Café Coado</li>
-                    <li>Chocolate em Pó</li>
-                    <li>Ovos</li>
-                </ul>
-                <hr>
-            
-                <p>Bata o acúcar, as gemas e o café. Adicione farinha e chocolate e mexa bem. Bata as claras e junte à mistura.</p>
-            </div>
-
-            <div id="receita3">
-                <h1>Coxinha de Brigadeiro</h1>
-
-                <div>
-                    <img src="imagens/coxinha.jpg" alt="Imagem de uma coxinha de brigadeiro" id="coxinha">
-                </div>
-
-                <ul>
-                    <li>Leite Condensado</li>
-                    <li>Chocolate em Pó</li>
-                    <li>Manteiga</li>
-                    <li>Morango</li>
-                    <li>Chocolate Granulado</li>
-                </ul>
-                <hr>
-                <p>Junte o leite condensado, chocolate em pó e manteiga. Aqueça no fogo baixo. Envolva os morangos e passe no granulado.</p>
-            </div>
+          <p class="card-text">Deixe a couve-flor picada. Adicione os ingredientes e refogue bem. Adicione sal, tampe a panela e deixe cozinhar.</p>
         </div>
+      </div>
+    </div>
 
-        
-    </main>
-    <footer>
-            <p>&#169;Jurema 2022</p> 
-        </footer>
+    <div class="col">
+      <div class="card h-100 mx-auto">
+        <img src="imagens/bolo.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title card text-center">Bolo de Café</h5>
+
+          <ul>
+            <li>Farinha de Trigo</li>
+            <li>Acúcar</li>
+            <li>Café Coado</li>
+            <li>Chocolate em Pó</li>
+            <li>Ovos</li>
+        </ul>
+        <hr>
+
+          <p class="card-text">Bata o acúcar, as gemas e o café. Adicione farinha e chocolate e mexa bem. Bata as claras e junte à mistura.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100 mx-auto">
+        <img src="imagens/coxinha.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title card text-center">Coxinha de Brigadeiro</h5>
+
+          <ul>
+            <li>Leite Condensado</li>
+            <li>Chocolate em Pó</li>
+            <li>Manteiga</li>
+            <li>Morango</li>
+            <li>Chocolate Granulado</li>
+        </ul>
+        <hr>
+
+          <p class="card-text">Junte o leite condensado, chocolate em pó e manteiga. Aqueça no fogo baixo. Envolva os morangos e passe no granulado.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<footer class="text-center bg-dark text-white">
+  &copy;Jurema 2022
+</footer>
 </body>
 </html>
