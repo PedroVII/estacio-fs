@@ -37,9 +37,5 @@ main p {
 }
 
 footer {
-    color: white;
-    background-color: black;
     margin-top: auto;
-    text-align: center;
-    font-weight: bold;
 }
