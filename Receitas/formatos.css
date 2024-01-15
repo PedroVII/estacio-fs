@@ -7,10 +7,6 @@ body {
     margin: auto;
 }
 
-nav > p {
-    margin: 5px 0px 0px 6px;
-}
-
 .container {
     display: flex;
   justify-content: center;
