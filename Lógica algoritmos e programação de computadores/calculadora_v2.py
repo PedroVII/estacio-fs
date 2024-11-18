@@ -14,7 +14,6 @@ def divisao(n1,n2):
 
 def calculadora(num1,op,num2):
    
-
    if op == '+':
       print(num1, "+", num2, "=",
            adicao(num1,num2))
@@ -34,8 +33,6 @@ def calculadora(num1,op,num2):
     print(num1, "/", num2, "=",
           divisao(num1,num2))
     resultado = divisao(num1,num2)
-   else:
-      print("operação inválida")
    return resultado
 
 while True:
@@ -47,9 +44,11 @@ while True:
       break
 
    num2 = float(input('Digite o segundo número: '))
-   #calculadora(num1,op,num2)
+
    resultado = calculadora(num1,op,num2)
+
    print('Resultado da operação: ',resultado)
+
    saida = input('Deseja continuar o programa? S/N')
    if saida.lower() in ['s', 'S']:
       print('Continuando...')
