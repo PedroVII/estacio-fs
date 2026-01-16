@@ -1,0 +1,26 @@
+print("=" * 50)
+print("MÉTODO 1: Usando open() e read()")
+print("=" * 50)
+
+arquivo = open("loremipsum.txt", "r", encoding="utf-8")
+conteudo_completo = arquivo.read()
+print("\n1. Todo o conteúdo do arquivo:")
+print(conteudo_completo)
+arquivo.seek(0)
+primeira_linha = arquivo.readline()
+print("\n2. Apenas a primeira linha:")
+print(primeira_linha)
+arquivo.seek(0)
+tres_caracteres = arquivo.read(3)
+print("\n3. Apenas os 3 primeiros caracteres:")
+print(tres_caracteres)
+arquivo.close()
+
+print("\n" + "=" * 50)
+print("MÉTODO 2: Usando 'with' (recomendado)")
+print("=" * 50)
+
+with open("loremipsum.txt", "r", encoding="utf-8") as arquivo_with:
+    conteudo_with = arquivo_with.read()
+    print("\n4. Conteúdo lido com 'with':")
+    print(conteudo_with)

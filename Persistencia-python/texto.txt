@@ -1,0 +1,5 @@
+Olá! Esta é a primeira linha do arquivo.
+Python facilita a manipulação de arquivos.
+O método append() adiciona elementos à lista.
+Agora vamos escrever tudo no arquivo texto.txt.
+Esta é a última linha!

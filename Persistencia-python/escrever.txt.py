@@ -1,0 +1,17 @@
+arquivo = open("texto.txt", "w", encoding="utf-8")
+texto = list()
+texto.append("Olá! Esta é a primeira linha do arquivo.\n")
+texto.append("Python facilita a manipulação de arquivos.\n")
+texto.append("O método append() adiciona elementos à lista.\n")
+texto.append("Agora vamos escrever tudo no arquivo texto.txt.\n")
+texto.append("Esta é a última linha!\n")
+arquivo.writelines(texto)
+arquivo.close()
+
+print("Arquivo 'texto.txt' criado com sucesso!")
+print(f"Total de linhas escritas: {len(texto)}")
+print("\n" + "=" * 50)
+print("Conteúdo escrito no arquivo:")
+print("=" * 50)
+for linha in texto:
+    print(linha, end="")
